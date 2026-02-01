@@ -5,6 +5,11 @@ permissions:
 
 on:
   workflow_dispatch:
+      inputs:
+        BuildConfig:
+          required: true
+          type: string
+          default: "Release"
   workflow_call:
     inputs:
       BuildConfig:
